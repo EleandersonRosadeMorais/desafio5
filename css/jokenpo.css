@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pai {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filho1, .filho2 {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.filho1 {
+    max-width: 500px;
+}
+
+.filho2 {
+    max-width: 500px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 20px 0 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.placar h2 {
+   color: #444;
+   margin-bottom: 15px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.radio-option:hover {
+    border-color: #5b73e8;
+    background-color: #f8f9ff;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+    flex: 1;
+}
+
+.radio-option input[type="radio"]:checked + label {
+    color: #5b73e8;
+    font-weight: 600;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="submit"], button[type="submit"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #5b73e8, #415bd1);
+    color: white;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(91, 115, 232, 0.4);
+    background: linear-gradient(45deg, #415bd1, #5b73e8);
+}
+
+button[type="submit"] {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    color: white;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+    background: linear-gradient(45deg, #c82333, #dc3545);
+}
+
+.erro {
+    background: #ffeaea;
+    border: 1px solid #ffb3b3;
+    color: #c0392b;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.erro li {
+    padding: 5px 0;
+}
+
+.resultado {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #5b73e8;
+    margin-bottom: 20px;
+}
+
+.resultado p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.resultado strong {
+    color: #5b73e8;
+}
+
+.placar {
+    text-align: center;
+}
+
+.placar p {
+    font-size: 1rem;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    background: #f8f9ff;
+    transition: background-color 0.3s ease;
+}
+
+.placar p:hover {
+    background-color: #f8f9ff;
+}
+
+.placar p:nth-child(2) {
+    color: #667eea;
+    font-weight: 600;
+}
+
+.placar p:nth-child(3) {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.placar p:nth-child(4) {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.placar p:nth-child(5) {
+    color: #e74c3c;
+    font-weight: 600;
+}
