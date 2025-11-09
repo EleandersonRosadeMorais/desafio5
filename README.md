@@ -4,6 +4,7 @@ Este projeto contém duas aplicações web desenvolvidas em PHP: um **Gerador de
 
 ## 📁 ESTRUTURA DO PROJETO
 desafio5/
+```
 ├── index.html # Página inicial
 ├── css/
 │    ├── index.css # Estilos da página inicial
@@ -15,7 +16,7 @@ desafio5/
 └── img/
      ├── icon_rifa.png # Ícone da rifa
      └── icon_jokenpo.png # Ícone do jokenpô
-
+```
 ## 🎟️ GERADOR DE RIFAS
 
 ### Funcionalidades:
